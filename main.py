@@ -43,7 +43,7 @@ def main():
             for workbook_conn in workbook.connections:
                 if args.old_connection != workbook_conn.server_address:
                     logging.info(
-                        f'Skipping connection {workbook_conn.server_address} in f{workbook.name}')
+                        f'Skipping connection {workbook_conn.server_address} in {workbook.name}')
                     continue
 
                 if args.new_username:
