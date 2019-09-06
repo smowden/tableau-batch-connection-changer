@@ -58,8 +58,6 @@ def main():
                     workbook_conn.server_address = args.new_connection
 
                 server.workbooks.update_connection(workbook, workbook_conn)
-            exit(0)
-
 
 if __name__ == '__main__':
     main()
